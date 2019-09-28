@@ -1,0 +1,22 @@
+/*Responsiveness*/
+
+@media (max-width: 767px) {
+    #alphabet {
+    padding:0 0 0 15px;
+  }
+    }
+  
+    @media (max-width: 480px) {
+    #alphabet {
+    padding:0 0 0 25px;
+  }
+    }
+
+    body {
+      background:limegreen;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+      color:white;
+      height:100%;
+      text-align:center;
+      font-size:18px;
+    }
