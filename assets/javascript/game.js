@@ -177,7 +177,28 @@ window.onload = function () {
                 comments();
             }
         }
+
+        document.onkeyup = function (event) {
+            var guess = event.key;
+            this.setAttribute("class", "active");
+            this.onclick = null;
+            for (var i = 0; i < word.length; i++) {
+                if (word[i] === guess) {
+                    guesses[i].innerHTML = guess;
+                    counter += 1;
+                }
+            }
+            var j = (word.indexOf(guess));
+            if (j === -1) {
+                lives -= 1;
+                comments();
+                animate();
+            } else {
+                comments();
+            }
+        }
     };
+
 
     // Keyup Function//
 
