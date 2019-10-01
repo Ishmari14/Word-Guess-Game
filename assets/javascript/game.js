@@ -180,7 +180,7 @@ window.onload = function () {
 
         document.onkeyup = function (event) {
             var guess = event.key;
-            this.setAttribute("class", "active");
+            list.setAttribute("class", "active");
             this.onclick = null;
             for (var i = 0; i < word.length; i++) {
                 if (word[i] === guess) {
